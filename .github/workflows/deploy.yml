@@ -17,10 +17,8 @@ jobs:
           passphrase: ${{ secrets.PROD_PASSPHRASE }}
           port: ${{ secrets.PROD_PORT }}
           script: |
-            sudo su
-            cd ~/node-servers/nuit-info-2022_api
+            cd ~/nuit-info-2022_api
             git pull origin master
             npm install
             npm run build
-            sudo su
             sudo pm2 restart nuit_info_2022_api
