@@ -21,4 +21,4 @@ jobs:
             git pull origin master
             npm install
             npm run build
-            sudo pm2 restart nuit_info_2022_api
+            pm2 restart nuit_info_2022_api
