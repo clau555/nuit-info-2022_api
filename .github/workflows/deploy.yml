@@ -1,0 +1,26 @@
+name: Deployment
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    name: Production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to production server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.PROD_HOST }}
+          username: ${{ secrets.PROD_USERNAME }}
+          key: ${{ secrets.PROD_KEY }}
+          passphrase: ${{ secrets.PROD_PASSPHRASE }}
+          port: ${{ secrets.PROD_PORT }}
+          script: |
+            sudo su
+            cd ~/node-servers/nuit-info-2022_api
+            git pull origin master
+            npm install
+            npm run build
+            sudo su
+            sudo pm2 restart nuit_info_2022_api
