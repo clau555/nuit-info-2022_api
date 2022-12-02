@@ -50,7 +50,7 @@ export const situationCards: Card[] = [
         diseases: [Disease.PenisFracture],
     },
     {
-        message: "Je vais aux putes. Que faire ?",
+        message: "Je suis polygame comment me protéger?",
         diseases: [
             Disease.HIV,
             Disease.Syphilis,
@@ -61,5 +61,14 @@ export const situationCards: Card[] = [
             Disease.HepatitisA,
             Disease.HepatitisB,
         ],
+    },
+    {
+        message: "Mon partenaire est infecter avec le papillomavirus. Comment réagir?",
+        diseases: [Disease.Papillomavirus],
+    },
+
+    {
+        message: "J'ai de l'herpes comment protéger mes partenaires?",
+        diseases: [Disease.Papillomavirus],
     },
 ];
