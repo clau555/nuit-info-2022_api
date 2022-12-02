@@ -1,6 +1,11 @@
-export interface Turn {
+export interface StartingRound {
     situationCard: Card;
     responseCards: Card[];
+}
+
+export interface Round {
+    situationCard: Card;
+    responseCard: Card;
 }
 
 export interface Card {

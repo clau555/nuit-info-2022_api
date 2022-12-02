@@ -1,6 +1,6 @@
 import { Card, Disease } from "./card.types";
 
-export const situationsCards: Card[] = [
+export const situationCards: Card[] = [
     {
         message: "Et bien chantez maintenant",
         diseases: [Disease.HIV, Disease.HepatitisA],

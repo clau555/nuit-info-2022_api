@@ -1,6 +1,6 @@
 import { Card, Disease } from "./card.types";
 
-export const responsesCards: Card[] = [
+export const responseCards: Card[] = [
     {
         message: "Lorem ipsum dolor sit amet",
         diseases: [Disease.HIV, Disease.Chlamydia],
