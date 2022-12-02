@@ -22,4 +22,6 @@ export enum Disease {
     Herpes = "Herpes",
     HepatitisA = "Hepatitis A",
     HepatitisB = "Hepatitis B",
+    PenisFracture = "Fracure du penis",
+    Pregnancy = "Grosesse",
 }
