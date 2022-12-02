@@ -1,6 +1,11 @@
-export interface Turn {
+export interface StartingRound {
     situationCard: Card;
     responseCards: Card[];
+}
+
+export interface Round {
+    situationCard: Card;
+    responseCard: Card;
 }
 
 export interface Card {
@@ -17,4 +22,6 @@ export enum Disease {
     Herpes = "Herpes",
     HepatitisA = "Hepatitis A",
     HepatitisB = "Hepatitis B",
+    PenisFracture = "Fracure du penis",
+    Pregnancy = "Grosesse",
 }
