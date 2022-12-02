@@ -69,6 +69,6 @@ export const situationCards: Card[] = [
 
     {
         message: "J'ai de l'herpes comment protéger mes partenaires?",
-        diseases: [Disease.Papillomavirus],
+        diseases: [Disease.Herpes],
     },
 ];
